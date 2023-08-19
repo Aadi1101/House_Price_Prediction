@@ -6,7 +6,7 @@ import tensorflow as tf
 from keras.callbacks import EarlyStopping
 from src.exception import CustomException
 from src.logger import logging
-from src.utils import save_model, save_json_object
+from src.utils import save_json_object
 
 @dataclass
 class ModelTrainerConfig():
@@ -40,7 +40,7 @@ class ModelTrainer():
             score = model.evaluate(x_test, y_test, verbose=1)
             logging.info('loss value: ', score[0])
             logging.info('Mean absolute error: ', score[1])
-            save_model(self.model_trainer_config.model_path,model)
+            model.save('src/models/model.h5')
             save_json_object(self.model_trainer_config.model_report_path,{"Simple Neural Network":score})
             test_predictions = model.predict(x_test).flatten()
             print(test_predictions)
