@@ -1,0 +1,7 @@
+numpy
+pandas
+dill
+keras
+seaborn
+scikit-learn
+-e .
