@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>House Price Prediction</title>
+</head>
+<body>
+  <h1>House Price Prediction Using Deep Learning</h1>
+
+  <h2>Introduction:</h2>
+  <p>
+    Predicting house prices is crucial for real estate professionals, buyers, and sellers to make informed decisions. This project aims to build a predictive model for house prices using various housing-related features. The goal is to create a tool that estimates the price of a house based on its characteristics.
+  </p>
+
+  <h2>Dataset Description:</h2>
+  <p>
+    The dataset used in this study contains information about various housing features and their corresponding prices. It includes features such as CRIM (crime rate), ZN (proportion of residential land zoned for large lots), INDUS (proportion of non-retail business acres per town), CHAS (Charles River dummy variable), NOX (nitric oxides concentration), RM (average number of rooms per dwelling), AGE (proportion of owner-occupied units built prior to 1940), DIS (weighted distances to five Boston employment centers), RAD (index of accessibility to radial highways), TAX (property tax rate), PTRATIO (pupil-teacher ratio), B (1000(Bk - 0.63)^2 where Bk is the proportion of Black residents), and LSTAT (percentage of lower status of the population).
+  </p>
+
+  <h2>Feature Explanations:</h2>
+  <ol>
+    <li><strong>CRIM:</strong> Crime rate in the neighborhood.</li>
+    <li><strong>ZN:</strong> Proportion of residential land zoned for large lots.</li>
+    <li><strong>INDUS:</strong> Proportion of non-retail business acres per town.</li>
+    <li><strong>CHAS:</strong> Charles River dummy variable (1 if tract bounds river; 0 otherwise).</li>
+    <li><strong>NOX:</strong> Nitric oxides concentration (pollution level).</li>
+    <li><strong>RM:</strong> Average number of rooms per dwelling.</li>
+    <li><strong>AGE:</strong> Proportion of owner-occupied units built prior to 1940.</li>
+    <li><strong>DIS:</strong> Weighted distances to employment centers.</li>
+    <li><strong>RAD:</strong> Index of accessibility to radial highways.</li>
+    <li><strong>TAX:</strong> Property tax rate.</li>
+    <li><strong>PTRATIO:</strong> Pupil-teacher ratio.</li>
+    <li><strong>B:</strong> Proportion of Black residents.</li>
+    <li><strong>LSTAT:</strong> Percentage of lower status of the population.</li>
+  </ol>
+  <h2>Input formats</h2>
+  <ul>
+    <li>update url:/predict?data=CRIM,ZN,INDUS,CHAS,NOX,RM,AGE,DIS,RAD,TAX,PTRATIO,B,LSTAT</li>
+    <li>Enter data as json file:{"data":"CRIM,ZN,INDUS,CHAS,NOX,RM,AGE,DIS,RAD,TAX,PTRATIO,B,LSTAT"}</li>
+  </ul>
+</body>
+</html>
